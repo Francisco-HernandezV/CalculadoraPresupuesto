@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #2d3250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .contenedor {
+    background-color: #424769;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #ffd869;
+    font-size: 2rem;
+  }
+  
+  .finanzas {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #balance {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .entradas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .entradas input {
+    padding: 15px;
+    border: 1px solid #6c6f9d;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .entradas input:focus {
+    border-color: #28a745;
+    outline: none;
+  }
+  
+  .botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .botones button {
+    width: 48%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botones .ingreso {
+    background-color: #28a745;
+    color: #ffffff;
+  }
+  
+  .botones .gasto {
+    background-color: #dc3545;
+    color: #ffffff;
+  }
+  
+  .botones button:hover {
+    opacity: 0.8;
+  }
+  
+  .transacciones {
+    width: 100%;
+  }
+  
+  .transacciones ul {
+    list-style: none;
+  }
+  
+  .transacciones li {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #cfd8dc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .transacciones li:hover {
+    background-color: #e0f7fa;
+  }
+  
+  .transacciones .ingreso {
+    border-left: 8px solid #28a745;
+  }
+  
+  .transacciones .gasto {
+    border-left: 8px solid #dc3545;
+  }
+  
+  .transacciones li span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .transacciones .descripcion {
+    font-weight: bold;
+    color: #37474f;
+  }
+  
+  .transacciones .cantidad {
+    color: #546e7a;
+  }
+  
+  .transacciones .tipo {
+    color: #78909c;
+  }
+  
+  @media (min-width: 600px) {
+    .contenedor {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 40px;
+    }
+  
+    .finanzas,
+    .transacciones {
+      width: 48%;
+    }
+  
+    #balance {
+      font-size: 2.5rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
